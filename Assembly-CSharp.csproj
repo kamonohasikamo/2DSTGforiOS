@@ -55,6 +55,7 @@
      <Compile Include="Assets\RockController.cs" />
      <Compile Include="Assets\RocketController.cs" />
      <Compile Include="Assets\RockGenerator.cs" />
+     <Compile Include="Assets\UIController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
