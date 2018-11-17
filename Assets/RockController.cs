@@ -20,6 +20,7 @@ public class RockController : MonoBehaviour {
 
         if (transform.position.y < -5.5f)
         {
+            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
             Destroy(gameObject);
         }
 	}
