@@ -7,6 +7,8 @@ public class RocketController : MonoBehaviour
 
     public GameObject bulletPrefab;
     private AudioSource laser2;
+    public bool moveL = false;
+    public bool moveR = false;
 
     // Use this for initialization
     void Start()
@@ -20,32 +22,41 @@ public class RocketController : MonoBehaviour
     {
         Vector3 pos = this.gameObject.transform.position;
 
-        if (pos.x > -2.22 && pos.x < 2.22)
+        if (pos.x > -2.2 && pos.x < 2.2)
         {
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) && moveR == false)
+            {
+                moveL = true;
+                this.gameObject.transform.position = new Vector3(pos.x - 0.1f, pos.y, pos.z);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) && moveL == false)
+            {
+                moveR = true;
+                this.gameObject.transform.position = new Vector3(pos.x + 0.1f, pos.y, pos.z);
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftArrow)) { moveL = false; }
+            if (Input.GetKeyUp(KeyCode.RightArrow)) { moveR = false; }
+        }
+
+        else if (pos.x >= 2.2)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow) && moveR == false)
             {
                 this.gameObject.transform.position = new Vector3(pos.x - 0.1f, pos.y, pos.z);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKeyUp(KeyCode.LeftArrow)) { moveL = false; }
+            if (Input.GetKeyUp(KeyCode.RightArrow)) { moveR = false; }
+        }
+
+        else if (pos.x <= -2.2)
+        {
+            if (Input.GetKey(KeyCode.RightArrow) && moveL == false)
             {
                 this.gameObject.transform.position = new Vector3(pos.x + 0.1f, pos.y, pos.z);
             }
-        }
-
-        else if (pos.x >= 2.22)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                this.gameObject.transform.position = new Vector3(pos.x - 0.1f, pos.y, pos.z);
-            }
-        }
-
-        else if (pos.x <= -2.22)
-        {
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                this.gameObject.transform.position = new Vector3(pos.x + 0.1f, pos.y, pos.z);
-            }
+            if (Input.GetKeyUp(KeyCode.LeftArrow)) { moveL = false; }
+            if (Input.GetKeyUp(KeyCode.RightArrow)) { moveR = false; }
         }
 
         /*if (Input.GetKey (KeyCode.LeftArrow))

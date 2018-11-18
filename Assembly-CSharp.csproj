@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\BackgroundController.cs" />
      <Compile Include="Assets\BulletController.cs" />
+     <Compile Include="Assets\GameStart.cs" />
      <Compile Include="Assets\RockController.cs" />
      <Compile Include="Assets\RocketController.cs" />
      <Compile Include="Assets\RockGenerator.cs" />
