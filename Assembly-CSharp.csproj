@@ -51,14 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game\BackgroundController.cs" />
-     <Compile Include="Assets\Game\BulletController.cs" />
-     <Compile Include="Assets\Game\RockController.cs" />
-     <Compile Include="Assets\Game\RocketController.cs" />
-     <Compile Include="Assets\Game\RockGenerator.cs" />
-     <Compile Include="Assets\Game\UIController.cs" />
-     <Compile Include="Assets\GameStart\GameExit.cs" />
-     <Compile Include="Assets\GameStart\GameStart.cs" />
+     <Compile Include="Assets\BackgroundController.cs" />
+     <Compile Include="Assets\BulletController.cs" />
+     <Compile Include="Assets\GameExit.cs" />
+     <Compile Include="Assets\GameStart.cs" />
+     <Compile Include="Assets\RockController.cs" />
+     <Compile Include="Assets\RocketController.cs" />
+     <Compile Include="Assets\RockGenerator.cs" />
+     <Compile Include="Assets\UIController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
