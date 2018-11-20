@@ -53,11 +53,13 @@
   <ItemGroup>
      <Compile Include="Assets\BackgroundController.cs" />
      <Compile Include="Assets\BulletController.cs" />
+     <Compile Include="Assets\Button.cs" />
      <Compile Include="Assets\GameExit.cs" />
      <Compile Include="Assets\GameStart.cs" />
      <Compile Include="Assets\RockController.cs" />
      <Compile Include="Assets\RocketController.cs" />
      <Compile Include="Assets\RockGenerator.cs" />
+     <Compile Include="Assets\toHelpButtonAction.cs" />
      <Compile Include="Assets\UIController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
