@@ -59,6 +59,7 @@
      <Compile Include="Assets\RockController.cs" />
      <Compile Include="Assets\RocketController.cs" />
      <Compile Include="Assets\RockGenerator.cs" />
+     <Compile Include="Assets\toBackTitleButtonAction.cs" />
      <Compile Include="Assets\toHelpButtonAction.cs" />
      <Compile Include="Assets\UIController.cs" />
  <Reference Include="UnityEngine.UI">
