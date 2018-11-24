@@ -56,6 +56,8 @@
      <Compile Include="Assets\Button.cs" />
      <Compile Include="Assets\GameExit.cs" />
      <Compile Include="Assets\GameStart.cs" />
+     <Compile Include="Assets\RankingController.cs" />
+     <Compile Include="Assets\resultScoreController.cs" />
      <Compile Include="Assets\RockController.cs" />
      <Compile Include="Assets\RocketController.cs" />
      <Compile Include="Assets\RockGenerator.cs" />
