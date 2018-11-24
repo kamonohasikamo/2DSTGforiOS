@@ -14,6 +14,7 @@ public class RankingController : MonoBehaviour {
         ranking.GetComponent<Text>().text = "";
         saveRanking();
         printRanking();
+        UIController.score = 0;
 	}
 	
 	// Update is called once per frame
@@ -46,6 +47,7 @@ public class RankingController : MonoBehaviour {
             if (f && UIController.score == sort[i])
             {
                 ranking.GetComponent<Text>().text += "<color=red>" + (i + 1) + "位： Score  " + sort[i].ToString("D4") + "</color>\n";
+                PlayerPrefs.SetInt("" + i, sort[i]);
                 f = false;
 
             }
