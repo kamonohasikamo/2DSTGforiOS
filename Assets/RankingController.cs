@@ -27,7 +27,6 @@ public class RankingController : MonoBehaviour {
         for (int i = 0; i < 6; i++)
         {
             sort[i] = PlayerPrefs.GetInt(""+i,0);
-            Debug.Log(sort[i]);
         }
         for (int start = 1; start < sort.Length; start++)
         {
